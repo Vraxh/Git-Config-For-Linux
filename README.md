@@ -1,9 +1,5 @@
 # 🐧 Configuración de Git y GitHub
 
-Guía basada en la lección oficial de **The Odin Project** para la instalación, configuración global y autenticación SSH de Git con GitHub en Linux.
-
----
-
 ## 📋 Descripción General
 En esta guía aprenderás a:
 * Instalar Git en Linux.
@@ -18,20 +14,21 @@ En esta guía aprenderás a:
 
 Abre tu terminal e instala Git según la distribución de Linux que utilices:
 
-* **Ubuntu / Debian / Linux Mint:**
+* **Arch Linux:**
   ```bash
-  sudo apt update
-  sudo apt install git
+  sudo pacman -S git
   ```
+
 
 * **Fedora / RHEL / CentOS:**
   ```bash
   sudo dnf install git
   ```
-
-* **Arch Linux:**
+  
+* **Ubuntu / Debian / Linux Mint:**
   ```bash
-  sudo pacman -S git
+  sudo apt update
+  sudo apt install git
   ```
 
 Para verificar que la instalación fue exitosa:
