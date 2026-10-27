@@ -2,11 +2,11 @@
 
 ## 📋 Descripción General
 En esta guía aprenderás a:
-* Instalar Git en Linux.
-* Crear y configurar tu cuenta de GitHub de forma segura.
-* Configurar los datos de usuario global en Git.
-* Establecer la rama predeterminada como `main`.
-* Generar y asociar una clave SSH con GitHub para trabajar sin ingresar contraseñas constantemente.
+- Instalar Git en Linux.
+- Crear y configurar tu cuenta de GitHub de forma segura.
+- Configurar los datos de usuario global en Git.
+- Establecer la rama predeterminada como `main`.
+- Generar y asociar una clave SSH con GitHub para trabajar sin ingresar contraseñas constantemente.
 
 ---
 
@@ -14,18 +14,17 @@ En esta guía aprenderás a:
 
 Abre tu terminal e instala Git según la distribución de Linux que utilices:
 
-* **Arch Linux:**
+- **Arch Linux:**
   ```bash
   sudo pacman -S git
   ```
 
-
-* **Fedora / RHEL / CentOS:**
+- **Fedora / RHEL / CentOS:**
   ```bash
   sudo dnf install git
   ```
   
-* **Ubuntu / Debian / Linux Mint:**
+- **Ubuntu / Debian / Linux Mint:**
   ```bash
   sudo apt update
   sudo apt install git
@@ -86,15 +85,22 @@ La clave SSH te permitirá conectarte e interactuar con tus repositorios en GitH
 ```bash
 ls ~/.ssh/id_ed25519.pub
 ```
-* Si la terminal responde `No such file or directory`, continúa al siguiente punto.
-* Si el archivo ya existe, puedes saltar directo a la sección de copiar la clave.
+- Si la terminal responde `No such file or directory`, continúa al siguiente punto.
+- Si el archivo ya existe, puedes saltar directo a la sección de copiar la clave.
 
 ### 2. Generar una nueva clave SSH (Ed25519)
 ```bash
 ssh-keygen -t ed25519
 ```
-* Cuando te pregunte la ubicación de guardado (`Enter file in which to save...`), presiona **Enter** para aceptar la ruta por defecto.
-* Cuando te pida una frase de paso (*passphrase*), puedes presionar **Enter** dos veces si no deseas añadir una contraseña adicional.
+
+> ⚠️ **¿Te sale el error `bash: ssh-keygen: command not found`?**
+> En algunas instalaciones mínimas (como Arch Linux), la herramienta `openssh` no viene preinstalada. Si te sale este error, instala el paquete antes de ejecutar el comando:
+> - **Arch Linux:** `sudo pacman -S openssh`
+> - **Ubuntu/Debian:** `sudo apt install openssh-client`
+> - **Fedora:** `sudo dnf install openssh`
+
+- Cuando te pregunte la ubicación de guardado (`Enter file in which to save...`), presiona **Enter** para aceptar la ruta por defecto.
+- Cuando te pida una frase de paso (*passphrase*), puedes presionar **Enter** dos veces si no deseas añadir una contraseña adicional.
 
 ---
 
