@@ -57,8 +57,12 @@ Ejecuta los siguientes comandos en tu terminal. Asegúrate de incluir las comill
 ### 1. Establecer tu nombre y correo
 ```bash
 git config --global user.name "Tu Nombre"
+```
+
+```bash
 git config --global user.email "tu_correo@example.com"
 ```
+
 *(Si decidiste ocultar tu correo en GitHub, utiliza la dirección privada `@users.noreply.github.com` en lugar de tu correo personal).*
 
 ### 2. Definir `main` como la rama por defecto
